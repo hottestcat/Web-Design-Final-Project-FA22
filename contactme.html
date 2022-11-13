@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      The Canvas Edge/Contact Me
+      </title>
+    <link rel="stylesheet" href="CSS_Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemonada">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+<header>
+<div id="wrapper">
+  <div class="nav_bar">
+    <div class="left"><a href="index.html" class="logo"><img src="LOGO.png" alt="The Canvas Edge Logo/link to homepage"/></a></div>
+      <div class="center">
+        <ul class="menu">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about_page.html">About Me</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="#" class="active">Contact Me</a></li>
+        </ul>
+      </div>
+  <div class="right">
+    <ul class="cart">
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </div> 
+  </div>
+</header>
+<body>
+  <div class="contact_content">
+    <h2>Contact Me</h2><br>
+    <p> Please fill out the form to contact me. Thank you. </p><br>
+      <form action="/action_page.php">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" col="30" ><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="reason">Reason for contact:</label><br>
+        <textarea id="reason" name="reason" rows="6" col="76">Enter text here...</textarea><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+      </form>
+  </div>    
+      <body style="background-image: url('gallerypics/tulips.jpg')" style="max-width:100%;height:auto" alt="Yellow Tulips"></body>
+      <div class="imageTitle">Tulips</div>
+</body>
+</html>
