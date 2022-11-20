@@ -43,8 +43,27 @@
     </div>
   
   <img src= "gallerypics/raccoon.jpg" alt="Raccoon walking forward in a grassy field." style="max-width:100%;height:auto;">
-  <div class="imageTitle">Masked Curiosity</div>
+  <div class="imageTitle">Masked Curiosity</div><br>
     
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
     
 </body>
 </html>

@@ -39,7 +39,26 @@
   
       <p>Now that art can be made digitally, Isabel has branched out into the digital medium as well. After taking a class in Adobe Photoshop and Illustrator, she's enjoying making art that is less likely to harm the environment. She's still learning new skills and techniques and is also working on a web design degree.</p>   
   </div>
-  <body style="background-image: url('gallerypics/facepaint.jpg');"></body>
-  <div class="imageTitle">Getting Ready</div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  <body style="background-image: url('gallerypics/lg_bluegreenabstract.jpg');"></body>
+  <div class="imageTitle">Temporary Independence</div>
 </body>
 </html>

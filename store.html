@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemonada">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="store.js" async></script>
     </head>
   <header>
     <div id="wrapper">
@@ -30,52 +31,85 @@
       </div>
   </header>
     <body>
-        <h1>Gallery</h1>
-        <p>Here are some works done by Isabel.</p><br>
+        <h1>Store</h1>
+        <p>Here are some works by Isabel available for purchase.</p><br>
         <div class="gallery">
             <div class="galleryimage">
-                <img src="gallerypics/deathstarrynight.jpg" alt="Darth Vader and death star mixed with Van Gogh's Starry Night" width="350" height="450">
-                    <div class="imageTitle">Death Starry Night</div><br>
+                <img src="gallerypics/sm_bluegreenabstract.jpg" alt="Yellow blue and green paint on canvas">
+                    <div class="imageTitle">Temporary Independence- Digital Copy $75</div>
+                    <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
             <div class="galleryimage">
-                <img src="gallerypics/abstractflower.jpg" alt="Flower with abstract designs on petals on pink background" width="350" height="350">
-                    <div class="imageTitle">Floral Distraction</div><br>
+                <img src="gallerypics/sm_fractal.jpg" alt="Metallic gold and brown paint in fractal shapes">
+                    <div class="imageTitle">Knowledge- Digital Copy $75</div>
+                    <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
             <div class="galleryimage">
-                <img src="gallerypics/Dance.jpg" alt="Dancer with arms up, dress flaring outward" width="350" height="450">
-                     <div class="imageTitle">Dance with Me</div><br>
+                <img src="gallerypics/sm_succulents.jpg" alt="A blue and a purple succulent">
+                     <br><div class="imageTitle">Fragile Balance- Digital Copy $75</div>
+                     <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
             <div class="galleryimage">
-                <img src="gallerypics/Wolf.jpg" alt="Wolf looking forward with bluish grey background" width="350" height="450">
-                    <div class="imageTitle">Snowy Wolf</div><br>
+                <img src="gallerypics/sm_facepaint.jpg" alt="A lady painting her face before a dance">
+                    <div class="imageTitle">Getting Ready- Digital Copy $75</div>
+                    <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
                     
            <div class="galleryimage">
-                <img src="gallerypics/hulksmash.jpg" alt="Hulk wearing torn jeans, right fist punching to left side of image" width="350" height="450">
-                    <div class="imageTitle">Smashing</div><br>
+                <img src="gallerypics/sm_redblueabstract.jpg" alt="Red, blue and brown paints on white background">
+                    <br><div class="imageTitle">Wishful Approval- Digital Copy $75</div>
+                    <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
             <div class="galleryimage">
-                <img src="gallerypics/pinkblueabstract.jpg" alt="Pink, blue, black and white paints splashed on a grey background" width="350" height="450">
-                    <div class="imageTitle">Fractured Waves</div><br>
+                <img src="gallerypics/sm_cat.jpg" alt="Black and grey cat with pink butterfly">
+                    <div class="imageTitle">Hello- Digital Copy $75</div>
+                    <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
             <div class="galleryimage">
-                <img src="gallerypics/oldman.jpg" alt="Old man facing left with coat and hat, head turned forward" width="350" height="450">
-              <div class="imageTitle">Old Sailor</div><br>
-          </div>
+                <img src="gallerypics/sm_flowers.jpg" alt="Pink lilies with dirt in background">
+              <div class="imageTitle">Lilies- Digital Copy $75</div>
+              <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
+            </div>
           
-          <div class="galleryimage">
-            <img src="gallerypics/whitetigers.jpg" alt="Two white tigers, heads nuzzling each other with blue green background" width="350" height="550">
-          <div class="imageTitle">In This Together</div><br>
-        </div>
+            <div class="galleryimage">
+                <img src="gallerypics/sm_baby.jpg" alt="Black and white baby in a basket">
+              <div class="imageTitle">Bundle of Love-Digital Copy- $75</div>
+              <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
+            </div>
 
-        <div class="galleryimage">
-          <img src="gallerypics/sunflower.jpg" alt="Sunflowers with green background" width="350" height="450">
-        <div class="imageTitle">Stand Tall</div><br>
-      </div>
+            <div class="galleryimage">
+              <img src="gallerypics/sm_wintertrees.jpg" alt="Black trees with blue and white swirled background">
+            <div class="imageTitle">Frosty Delight- Digital Copy $75</div>
+            <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
+            </div>
+        </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+<script>
+  let mybutton = documentElementByID("addtocart");
+
+</script>
     </body>
     </html>

@@ -31,20 +31,31 @@
 <body>
   <div class="contact_content">
     <h2>Contact Me</h2><br>
-    <p> Please fill out the form to contact me. Thank you. </p><br>
-      <form action="/action_page.php">
+    <p> Please fill out the form to contact me. Thank you. </p>
+    <form action="welcome.php" method="post">
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" col="30" ><br>
+        <input type="textbox" id="name" name="name" row="1" col="50" ><br>
         <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" name="email" row="1" col="100"><br>
         <label for="reason">Reason for contact:</label><br>
         <textarea id="reason" name="reason" rows="6" col="76">Enter text here...</textarea><br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit"><br><br>
       </form> 
-      <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
-      </form>
+      <table style="width:100%">
+        <tr>
+          <th>The Canvas Edge</th>
+          <th>Phone Number</th>
+        </tr>
+        <tr>
+          <td>Office</td>
+          <td>(123) 456-7890</td>
+        </tr>
+        <tr>
+          <td>Fax</td>
+          <td>(123) 456-7891</td>
+        </tr>
+      </table>
   </div>    
       <body style="background-image: url('gallerypics/tulips.jpg')" style="max-width:100%;height:auto" alt="Yellow Tulips"></body>
-      <div class="imageTitle">Tulips</div>
 </body>
 </html>
