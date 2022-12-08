@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemonada">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 <header>
 <div id="wrapper">
@@ -23,22 +25,22 @@
       </div>
   <div class="right">
     <ul class="cart">
-      <li><a href="cart.html">Cart</a></li>
+      <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
     </ul>
   </div> 
   </div>
 </header>
 <body>
   <div class="contact_content">
-    <h2>Contact Me</h2><br>
+    <br><h2>Contact Me</h2><br>
     <p> Please fill out the form to contact me. Thank you. </p>
     <form action="welcome.php" method="post">
         <label for="name">Name:</label><br>
         <input type="textbox" id="name" name="name" row="1" col="50" ><br>
         <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" row="1" col="100"><br>
+        <input type="email" id="email" name="email" row="1" col="70"><br>
         <label for="reason">Reason for contact:</label><br>
-        <textarea id="reason" name="reason" rows="6" col="76">Enter text here...</textarea><br><br>
+        <textarea id="reason" name="reason" rows="6" col="150"></textarea><br><br>
         <input type="submit" value="Submit"><br><br>
       </form> 
       <table style="width:100%">
@@ -74,6 +76,6 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
-        </script>
+        </script><br>
     </body>
 </html>

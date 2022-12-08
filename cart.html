@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      The Canvas Edge/Cart Page
+      </title>
+      <meta name="description" content="View items in your cart and finalize your purchases from The Canvas Edge.">
+    <link rel="stylesheet" href="CSS_Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemonada">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<header>
+<div id="wrapper">
+  <div class="nav_bar">
+    <div class="left"><a href="index.html" class="logo"><img src="LOGO.png" alt="The Canvas Edge Logo/link to homepage"/></a></div>
+      <div class="center">
+        <ul class="menu">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about_page.html">About Me</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+      </div>
+  <div class="right">
+    <ul class="cart">
+      <li><a href="#" class="active"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+  </div> 
+  </div>
+</header>
+<body>
+  <div class="cart_wrapper">
+    <div class="cart_content">
+      <h2>Cart</h2>
+        <div class="project">
+          <div class="shop">
+            <div class="card">
+              <img src="gallerypics/sm_raccoon.jpg" alt="Raccoon walking forward in a grassy field">
+              <div class="imageTitle">Masked Curiosity- Digital Copy $75</div>
+              <p class="unit"> Quantity:  <input value="1"></p>
+              <p class="btn-area"><span class="btn2"><i class="fa fa-trash"></i></span></p>
+            </div>
+            <div class="card">
+              <img src="gallerypics/sm_fractal.jpg" alt="Metallic gold and brown paint in fractal shapes">
+              <div class="imageTitle">Knowledge- Digital Copy $75</div>
+              <p class="unit"> Quantity:  <input value="1"></p><br>
+              <p class="btn-area"><span class="btn2"><i class="fa fa-trash"></i></span></p>
+            </div>
+            <div class="card">
+              <img src="gallerypics/sm_succulents.jpg" alt="A blue and a purple succulent">
+              <div class="imageTitle">Fragile Balance- Digital Copy $75</div>
+              <p class="unit"> Quantity:  <input value="1"></p>
+              <p class="btn-area"><span class="btn2"><i class="fa fa-trash"></i></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>    
+  <div class="total_bar">
+    <p><span>Subtotal: </span><span>$225</span></p>
+    <hr>
+    <p><span>Tax (5%): </span><span>$11.25</span></p>
+    <hr>
+    <p><span>Shipping: </span><span>$0</span></p>
+    <hr>
+    <p><span>Total: </span><span>$236.25</span></p>
+    <p class="btn3"><i class="fa fa-shopping-cart"> Checkout</i></span></p>
+  </div><br>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script><br>
+</body>
+</html>

@@ -5,10 +5,12 @@
         <title>
           The Canvas Edge/Gallery
           </title>
+          <meta name="description" content="The Canvas Edge store page allows you to browse current works of art available for purchase.">
         <link rel="stylesheet" href="CSS_Style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemonada">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="store.js" async></script>
     </head>
   <header>
@@ -25,7 +27,7 @@
           </div>
       <div class="right">
         <ul class="cart">
-          <li><a href="cart.html">Cart</a></li>
+          <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
         </ul>
       </div> 
       </div>
@@ -34,57 +36,62 @@
         <h1>Store</h1>
         <p>Here are some works by Isabel available for purchase.</p><br>
         <div class="gallery">
-            <div class="galleryimage">
+            <div class="card">
                 <img src="gallerypics/sm_bluegreenabstract.jpg" alt="Yellow blue and green paint on canvas">
                     <div class="imageTitle">Temporary Independence- Digital Copy $75</div>
                     <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
-            <div class="galleryimage">
+            <div class="card">
                 <img src="gallerypics/sm_fractal.jpg" alt="Metallic gold and brown paint in fractal shapes">
                     <div class="imageTitle">Knowledge- Digital Copy $75</div>
                     <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
-            <div class="galleryimage">
+            <div class="card">
                 <img src="gallerypics/sm_succulents.jpg" alt="A blue and a purple succulent">
                      <br><div class="imageTitle">Fragile Balance- Digital Copy $75</div>
                      <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
-            <div class="galleryimage">
+            <div class="card">
                 <img src="gallerypics/sm_facepaint.jpg" alt="A lady painting her face before a dance">
                     <div class="imageTitle">Getting Ready- Digital Copy $75</div>
                     <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
                     
-           <div class="galleryimage">
+           <div class="card">
                 <img src="gallerypics/sm_redblueabstract.jpg" alt="Red, blue and brown paints on white background">
                     <br><div class="imageTitle">Wishful Approval- Digital Copy $75</div>
                     <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
-            <div class="galleryimage">
+            <div class="card">
                 <img src="gallerypics/sm_cat.jpg" alt="Black and grey cat with pink butterfly">
                     <div class="imageTitle">Hello- Digital Copy $75</div>
                     <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
-            <div class="galleryimage">
+            <div class="card">
                 <img src="gallerypics/sm_flowers.jpg" alt="Pink lilies with dirt in background">
               <div class="imageTitle">Lilies- Digital Copy $75</div>
               <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
           
-            <div class="galleryimage">
+            <div class="card">
                 <img src="gallerypics/sm_baby.jpg" alt="Black and white baby in a basket">
               <div class="imageTitle">Bundle of Love-Digital Copy- $75</div>
               <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
 
-            <div class="galleryimage">
+            <div class="card">
               <img src="gallerypics/sm_wintertrees.jpg" alt="Black trees with blue and white swirled background">
             <div class="imageTitle">Frosty Delight- Digital Copy $75</div>
+            <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="gallerypics/sm_raccoon.jpg" alt="Raccoon sneaking toward viewer over grassy field">
+            <div class="imageTitle">Masked Curiosity- Digital Copy $75</div>
             <button onclick="addtocart" id="addcart" title="Add to Cart">Add to Cart</button>
             </div>
         </div>
@@ -106,6 +113,6 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    </script>
+    </script><br>
     </body>
     </html>
