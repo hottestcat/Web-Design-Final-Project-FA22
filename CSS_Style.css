@@ -113,7 +113,7 @@
     } 
     .nav_bar ul .active {
       background-color: #43558c;
-      color: rgb(228, 228, 228);
+      color: #e4e4e4;
     }
     .nav_bar ul.cart li {
       width: 1.5rem;

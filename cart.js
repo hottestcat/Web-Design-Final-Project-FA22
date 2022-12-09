@@ -42,7 +42,7 @@ function getCartContents()
 
         document.getElementById("cartItemParent").appendChild(newCard);
 
-        newCard.getElementsByClassName("btn2")[0].addEventListener(
+        newCard.getElementsByClassName("btn-area")[0].addEventListener(
             "click",
             (event) =>
             {
